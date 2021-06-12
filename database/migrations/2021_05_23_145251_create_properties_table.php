@@ -15,11 +15,11 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
-            $table->text('erf_size')->nullable();
-            $table->text('levies',8,2)->nullable();
-            $table->double('rates_and_taxes',8,2)->nullable();
-            $table->text('age')->nullable();
-            $table->text('house_size')->nullable();
+            $table->double('erf_size')->nullable();
+            $table->double('levies', 8, 2)->nullable();
+            $table->double('rates_and_taxes', 8, 2)->nullable();
+            $table->integer('age')->nullable();
+            $table->double('house_size')->nullable();
             $table->integer('bedrooms')->nullable();
             $table->integer('toilets')->nullable();
             $table->integer('bathrooms')->nullable();
@@ -29,7 +29,7 @@ class CreatePropertiesTable extends Migration
             $table->integer('views')->nullable();
             $table->integer('property_type')->nullable();
             $table->integer('estimation')->nullable();
-            $table->double('price',8,2)->nullable();
+            $table->double('price', 8, 2)->nullable();
             $table->timestamps();
         });
     }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Property;
 
 class PropertyController extends Controller
 {
@@ -14,7 +15,8 @@ class PropertyController extends Controller
      */
     public function index()
     {
-        //
+        $property = Property::all();
+        return response()->json($property);
     }
 
     /**

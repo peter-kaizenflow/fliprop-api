@@ -32,7 +32,7 @@ Route::group([
     'prefix' => 'guest',
     'namespace' => 'Guest'
 ], function () {
-
+    Route::apiResource('properties', 'PropertyController');
 });
 
 Route::group([

@@ -32,6 +32,7 @@ Route::group([
     'prefix' => 'guest',
     'namespace' => 'Guest'
 ], function () {
+    Route::get('search-property', 'PropertyController@search');
     Route::apiResource('properties', 'PropertyController');
     Route::apiResource('service-provider-profile', 'ServiceProviderProfileController');
     Route::apiResource('service-provider-type', 'ServiceProviderTypeController');

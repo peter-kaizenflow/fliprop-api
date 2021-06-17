@@ -14,5 +14,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         \App\Models\Property::factory(10)->create();
+        \App\Models\BrokerProfile::factory(10)->create();
+        \App\Models\ServiceProviderProfile::factory(10)->create();
+
+        $this->call([
+            ServiceProviderTypeSeeder::class,
+        ]);
     }
 }

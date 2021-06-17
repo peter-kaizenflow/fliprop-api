@@ -33,6 +33,9 @@ Route::group([
     'namespace' => 'Guest'
 ], function () {
     Route::apiResource('properties', 'PropertyController');
+    Route::apiResource('service-provider-profile', 'ServiceProviderProfileController');
+    Route::apiResource('service-provider-type', 'ServiceProviderTypeController');
+    Route::apiResource('broker-profile', 'BrokerProfileController');
 });
 
 Route::group([
@@ -40,7 +43,7 @@ Route::group([
     'namespace' => 'Broker',
     'middleware' => ['auth:api']
 ], function () {
-    Route::apiResource('broker', 'BrokerController');
+    Route::apiResource('broker-profile', 'BrokerProfileController');
 });
 
 Route::group([

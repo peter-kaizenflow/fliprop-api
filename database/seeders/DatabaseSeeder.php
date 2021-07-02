@@ -16,9 +16,12 @@ class DatabaseSeeder extends Seeder
         \App\Models\Property::factory(10)->create();
         \App\Models\BrokerProfile::factory(10)->create();
         \App\Models\ServiceProviderProfile::factory(10)->create();
+        \App\Models\ServiceProviderQuote::factory(50)->create();
 
         $this->call([
             ServiceProviderTypeSeeder::class,
+            ServiceProviderQuoteCategorySeeder::class,
+            ServiceProviderQuoteItemSeeder::class,
         ]);
     }
 }

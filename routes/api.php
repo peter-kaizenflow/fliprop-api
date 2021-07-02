@@ -37,6 +37,7 @@ Route::group([
     Route::apiResource('service-provider-profile', 'ServiceProviderProfileController');
     Route::apiResource('service-provider-type', 'ServiceProviderTypeController');
     Route::apiResource('broker-profile', 'BrokerProfileController');
+    Route::apiResource('service-provider-quotes', 'ServiceProviderQuoteController');
 });
 
 Route::group([

@@ -30,6 +30,7 @@ class CreatePropertiesTable extends Migration
             $table->integer('property_type')->nullable();
             $table->integer('estimation')->nullable();
             $table->double('price', 8, 2)->nullable();
+            $table->double('property_status_id', 8, 2)->nullable();
             $table->timestamps();
         });
     }

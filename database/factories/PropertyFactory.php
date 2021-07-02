@@ -33,6 +33,7 @@ class PropertyFactory extends Factory
             'closed_parking' => $this->faker->randomDigit(),
             'street_parking' => $this->faker->randomDigit(),
             'address_id' => $this->faker->numberBetween($min = 1, $max = 1000),
+            'property_status_id' => $this->faker->numberBetween($min = 1, $max = 4),
             'views' => $this->faker->randomDigit(),
             'property_type' => $this->faker->numberBetween($min = 1, $max = 5),
             'estimation' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 5000, $max = 15000),

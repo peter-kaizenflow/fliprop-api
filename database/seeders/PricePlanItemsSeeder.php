@@ -44,5 +44,17 @@ class PricePlanItemsSeeder extends Seeder
                 ['price_plan_id' => '6', 'item' => 'Unlimited leads'],
             ]
         );
+
+        //service provider
+        PricePlanItem::insert(
+            [
+                ['price_plan_id' => '7', 'item' => '1 Quote'],
+                ['price_plan_id' => '7', 'item' => 'Unlimited leads'],
+                ['price_plan_id' => '8', 'item' => 'Post 20 quotes'],
+                ['price_plan_id' => '8', 'item' => 'Unlimited leads'],
+                ['price_plan_id' => '9', 'item' => 'Post unlimited quotes'],
+                ['price_plan_id' => '9', 'item' => 'Unlimited leads'],
+            ]
+        );
     }
 }

@@ -31,5 +31,14 @@ class PricePlanSeeder extends Seeder
                 ['name' => 'Enterprise', 'period' => 'monthly', 'cost' => '0', 'type' => 'broker'],
             ]
         );
+
+        //investors
+        PricePlan::insert(
+            [
+                ['name' => 'Basic', 'period' => 'once-off', 'cost' => '500', 'type' => 'service-provider'],
+                ['name' => 'Proffessional', 'period' => 'monthly', 'cost' => '5000', 'type' => 'service-provider'],
+                ['name' => 'Premium', 'period' => 'monthly', 'cost' => '0', 'type' => 'service-provider'],
+            ]
+        );
     }
 }

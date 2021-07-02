@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\ServiceProviderQuote::factory(50)->create();
 
         $this->call([
+            PropertyStatusSeeder::class,
             MenuLocationsSeeder::class,
             PricePlanItemsSeeder::class,
             PricePlanSeeder::class,

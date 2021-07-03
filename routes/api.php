@@ -39,6 +39,7 @@ Route::group([
     Route::apiResource('broker-profile', 'BrokerProfileController');
     Route::apiResource('pricing-plans', 'PricePlanController');
     Route::apiResource('menu-locations', 'MenuLocationsController');
+    Route::apiResource('featured-properties', 'FeaturedPropertyController');
     Route::apiResource('service-provider-quotes', 'ServiceProviderQuoteController');
 });
 

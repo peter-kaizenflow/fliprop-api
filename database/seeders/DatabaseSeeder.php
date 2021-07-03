@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\ServiceProviderProfile::factory(10)->create();
         \App\Models\ServiceProviderQuote::factory(50)->create();
         \App\Models\FeaturedProperty::factory(10)->create();
+        \App\Models\PopularSuburb::factory(4)->create();
 
         $this->call([
             PropertyStatusSeeder::class,

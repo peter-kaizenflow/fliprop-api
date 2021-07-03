@@ -40,6 +40,7 @@ Route::group([
     Route::apiResource('pricing-plans', 'PricePlanController');
     Route::apiResource('menu-locations', 'MenuLocationsController');
     Route::apiResource('featured-properties', 'FeaturedPropertyController');
+    Route::apiResource('popular-suburbs', 'PopularSuburbController');
     Route::apiResource('service-provider-quotes', 'ServiceProviderQuoteController');
 });
 

@@ -15,9 +15,13 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->id();
+            $table->double('floor_size')->nullable();
             $table->double('erf_size')->nullable();
+            $table->string('listing_number')->nullable();
+            $table->double('price_per_sqaure_meter', 8, 2)->nullable();
             $table->double('levies', 8, 2)->nullable();
             $table->double('rates_and_taxes', 8, 2)->nullable();
+            $table->longText('overview')->nullable();
             $table->integer('age')->nullable();
             $table->double('house_size')->nullable();
             $table->integer('bedrooms')->nullable();
